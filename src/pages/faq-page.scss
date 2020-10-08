@@ -1,0 +1,40 @@
+
+.faq-page {
+  background-color: #ffffff;
+  max-width: 935px;
+  margin: 10px auto;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: calc(100% - 50px);
+  text-align: left;
+
+  .close-line {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  .close-button {
+    width: 32px;
+    height: 32px;
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: fixed;
+
+    &:hover {
+      background-color: var(--border-color);
+    }
+
+    .close-icon {
+      width: 16px;
+      height: 16px;
+      color: #4d4d51;
+    }
+  }
+}

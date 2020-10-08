@@ -1,0 +1,30 @@
+.leftMenu {
+  display: flex;
+  flex-direction: column;
+  width: 265px;
+  margin: 20px 40px 20px 20px;
+
+  .leftMenuItem {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 4px 25px;
+    border-radius: 3px;
+    font-size: 16px;
+
+    &:visited {
+      color: var(--text-color);
+    }
+
+    &:hover {
+      color: var(--link-color-hover);
+      background: var(--link-background-hover);
+    }
+
+    .menuIcon {
+      margin-right: 5px;
+      width: 32px;
+      height: 32px;
+    }
+  }
+}

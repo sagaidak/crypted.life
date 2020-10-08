@@ -1,0 +1,11 @@
+.portfolio-widget {
+  display: flex;
+  flex-direction: column;
+
+
+  .head {
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+}

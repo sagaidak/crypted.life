@@ -1,0 +1,28 @@
+.feed-memes {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.feed-memes-item {
+ 
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #ffffff;
+  max-width: 610px;
+  margin: 10px;
+  border-radius: 5px;
+
+  .image {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .short {
+    height: 100px;
+  }
+}

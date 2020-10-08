@@ -1,0 +1,33 @@
+.bountyContent {
+  display: flex;
+  max-width: 1300px;
+  margin: auto;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.bountyItemsWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.bounty-filters {
+  display: flex;
+  margin: 10px 10px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+
+  .filter-tags {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .filter-status {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+

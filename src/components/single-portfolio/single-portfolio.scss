@@ -1,0 +1,103 @@
+.single-portfolio {
+  max-width: 1000px;
+  width: calc(100% - 40px);
+  margin: auto;
+
+  .single-portfolio-author {
+    display: flex;
+    align-items: center;
+
+    .author-data {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      margin-left: 20px;
+    }
+
+    .item-mid {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .item-date {
+      color: var(--secondary-text-color);
+    }
+
+    .single-portfolio-item-ava {
+      width: 75px;
+      height: 75px;
+      border-radius: 50%;
+    }
+
+    
+  }
+
+  .single-portfolio-description {
+    text-align: left;
+    padding: 20px 0;
+  }
+
+  .single-portfolio-item {
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    margin-bottom: 20px;
+
+    .portfolio-item-col {
+      margin: 0 20px;
+    }
+
+    .item-top {
+
+    }
+
+    .item-mid {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .portfolio-item-coin-icon {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  .trades-head {
+    text-align: left;
+    font-weight: bold;
+  }
+
+  .portfolio-trades {
+    text-align: left;
+
+  }
+
+  .portfolio-trade {
+    display: flex;
+    justify-content: space-between;
+    max-width: 700px;
+    margin: 20px;
+  }
+
+  .trade-col {
+    text-align: right;
+
+    .trade-col-top {
+      color: var(--secondary-text-color);
+    }
+
+    .trade-col-mid {
+
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .single-portfolio .single-portfolio-item .portfolio-item-col {
+    margin: 0 5px;
+  }
+
+  .single-portfolio .portfolio-trade {
+    margin: 10px 0;
+  }
+}

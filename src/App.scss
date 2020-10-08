@@ -1,0 +1,170 @@
+.light-theme {
+  --background-color: #eef0f1;
+  --text-color: #08090a;
+  --secondary-text-color: #7d8a97;
+  --link-color: #202428;
+  --link-color-hover: #1827ce;
+  --link-background-hover: rgba(8, 9, 10, 0.05);
+  --muted-link-color: #7d8a97;
+
+  --red-color: #EA5A47;
+  --green-color: #09A318;
+  --blue-color: #61B2E4;
+  
+  --header-color: transpared;
+  --border-color: #d6d8d9;
+
+  --footer-bg-color: #d2d6db;
+
+  --badge-blue-color: #748bd9;
+  --badge-blue-text-color: #ffffff;
+
+  --button-default-color: #3b49df;
+  --button-default-color-hover: #1827ce;
+  --button-default-text-color: #ffffff;
+
+  --hover-badge-bgcolor: #ffffff;
+
+  
+
+  /* bounty */
+  --estimated-value-color: #00ad75;
+
+  /* obmenki */
+  --obmenka-line-bg-color: #ffffff;
+  
+}
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+
+.dark-theme {
+  --background-color: #282c34;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+.App {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  /*text-shadow: 0px 0px 0px black, 0 0 2px dodgerblue;*/
+
+  &:hover {
+    color: var(--link-color-hover);
+  }
+}
+
+
+.blueBadge {
+  background: var(--badge-blue-color);
+  border-radius: 10px;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--badge-blue-text-color);
+  font-size: 15px;
+}
+
+button.default,
+a.default {
+  background-color: var(--button-default-color);
+  color: var(--button-default-text-color);
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 3px 5px;
+  border: none;
+
+  &:hover {
+    background-color: var(--button-default-color-hover);
+  }
+}
+
+.badged {
+  position: relative;
+  .hover-badge {
+    display: none;
+    position: absolute;
+    background-color:var(--hover-badge-bgcolor);
+    border: 1px solid var(--border-color);
+    border-radius: 3px;
+    min-width: 200px;
+    padding: 10px;
+  }
+  &:hover .hover-badge {
+    display: inline-block;
+    top: 15px;
+    left: 15px;
+    z-index: 1;
+    padding: 10px;
+  }
+}
+
+.pagination {
+  margin: 10px;
+  a {
+    margin-right: 10px;
+  }
+}
+
+.tag {
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px;
+  cursor: pointer;
+  line-height: 1;
+
+  &.active, &:hover {
+    color: var(--link-color-hover);
+    background-color: var(--link-background-hover);
+  }
+}
+
+h1 {
+  font-size: 20px;
+}
+
+/* widget */
+.widget {
+  background-color: #ffffff;
+  border-radius: 5px;
+  margin: 10px;
+  display: flex;
+  padding: 20px;
+  width: 100%;
+
+  &.w-1 {
+    max-width: 265px;
+  } 
+  
+  &.h-1 {
+    max-height: 265px;
+  }
+
+  &.h-2 {
+    max-height: 530px;
+  }
+}
+
+@media (max-width: 665px) {
+  .widget {
+    margin: 5px;
+  }
+
+}

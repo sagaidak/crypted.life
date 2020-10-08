@@ -1,0 +1,32 @@
+.defi {
+
+  display: flex;
+  flex-direction: column;
+
+  .icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .defi-header {
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .defi-line {
+    margin: 5px 0;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    
+  }
+
+  .bottom-line {
+    font-size: 14px;
+    text-align: right;
+    color: var(--secondary-text-color);
+  }
+}

@@ -1,0 +1,21 @@
+.dex-widget {
+  display: flex;
+  flex-direction: column;
+
+  .dex-header {
+    font-weight: bold;
+    text-align: left;
+  }
+
+  .icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+  }
+
+  .dex-line {
+    display: flex;
+    justify-content: flex-start;
+    margin: 5px 0;
+  }
+}

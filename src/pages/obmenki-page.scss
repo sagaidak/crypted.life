@@ -1,0 +1,151 @@
+.obmenkiContent {
+  display: flex;
+  justify-content: center;
+  margin: 15px auto;
+  padding: 0 40px;
+  max-width: 1280px;
+}
+
+
+
+.obmenka-currency {
+  display: flex;
+  border: 1px solid var(--border-color);
+  margin: 5px 5px;
+  padding: 7px 15px;
+  border-radius: 5px;
+  background-color: var(--obmenka-line-bg-color);
+  cursor: pointer;
+
+  align-items: center;
+
+  img {
+    width: 20px;
+    margin-right: 15px;
+  }
+
+  &.active, &:hover {
+    color: var(--link-color-hover);
+    background-color: var(--link-background-hover);
+  }
+
+  &:not(.valid) {
+    color: var(--muted-link-color);
+  }
+}
+
+.obmenka-currency-header {
+  display: flex;
+  border: 1px solid var(--border-color);
+  margin: 5px 5px;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: var(--badge-blue-color);
+  color: var(--badge-blue-text-color);
+  font-weight: bold;
+  justify-content: space-between;
+}
+
+.obmenka-lines {
+  width: 100%;
+}
+.obmenka-lines-header {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid var(--border-color);
+  margin: 5px 15px;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: var(--badge-blue-color);
+  color: var(--badge-blue-text-color);
+  font-weight: bold;
+
+  div {
+    flex-basis: 100%;
+    text-align: left;
+  }
+}
+
+.obmenka-types {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.obmenka-text {
+  background-color: #ffffff;
+  margin: 0 15px 15px;
+  padding: 15px;
+  text-align: left;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+
+  h1, b {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+.obmenka-part {
+  width: 100%;
+}
+
+.desktop-hidden {
+  display: none;
+}
+
+
+@media (max-width: 650px) {
+  .obmenkiContent {
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  .obmenka-text {
+    margin: 0 5px 15px;
+    display: none;
+  }
+  .obmenka-lines-header {
+    margin: 5px 5px;
+  }
+  .obmenka-line {
+    margin: 5px 5px;
+
+    a, div {
+      min-width: unset;
+    }
+
+    .secondary {
+      display: flex;
+    }
+  }
+
+  .obmenki-choice {
+    width: 100%;
+
+    .mobile-toggle {
+      display: none;
+    }
+
+    &.active {
+      .mobile-toggle {
+        display: block;
+      }
+
+      .triangle {
+        transform: rotate(180deg);
+      }
+    }
+  }
+  
+  .desktop-hidden {
+    display: block;
+  }
+}
+
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 17.3px 10px 0 10px;
+  border-color: #ffffff transparent transparent transparent;
+}

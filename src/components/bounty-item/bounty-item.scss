@@ -1,0 +1,139 @@
+.bountyItem {
+  border-radius: 5px;
+  background-color: #fff;
+  width: 265px;
+  text-align: left;
+  margin: 20px 10px;
+  height: max-content;
+  padding: 20px;
+
+  .tags {
+    display: flex;
+  }
+
+  .head {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--border-color);
+    padding: 5px;
+    align-items: center;
+
+    .left {
+      display: flex;
+
+      img {
+        width: 50px;
+        height: 50px;
+      }
+
+      .nameBlock {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 10px;
+
+        .name {
+          text-transform: uppercase;
+        }
+
+        .estimatedValue {
+          font-size: 16px;
+          color: var(--estimated-value-color);
+          font-weight: 900;
+        }
+      }
+    }
+
+    .right {
+      display: none;
+      flex-direction: column;
+      align-items: flex-end;
+
+      .votes {
+        display: flex;
+
+        .upVote:after {
+          content: '>';
+        }
+
+        .downVote:after {
+          content: '<';
+        }
+      }
+      .comments {
+        display: flex;
+        align-items: center;
+        
+        .text {
+          margin-right: 10px;
+          font-size: 14px;
+        }
+        
+      }
+    }
+
+  }
+
+  .task {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    
+    li {
+      position: relative;
+      margin-left: 15px;
+      margin-bottom: 10px;
+    }
+    li:before {
+      content: '';
+      position: absolute;
+      top: 6px;
+      left: -15px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #3b4c86;
+    }
+  }
+
+  .bottom {
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+
+    .left {
+      display: flex;
+      align-items: center;
+
+      .status {
+        margin: 0 10px;
+        &:before {
+          content: url(https://crypted.life:3001/files/icons/question-mark.png);
+        }
+      }
+
+      .endDate {
+        font-size: 20px;
+      }
+    }
+
+    .right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: center;
+
+      .clicks {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 650px) {
+  .bountyItem {
+    margin: 10px 5px;
+  }
+}

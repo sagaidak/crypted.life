@@ -1,0 +1,66 @@
+.obmenka-line {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid var(--border-color);
+  margin: 5px 15px;
+  padding: 7px 15px;
+  border-radius: 5px;
+  background-color: var(--obmenka-line-bg-color);
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  align-items: center;
+
+  &:hover {
+    background-color: var(--link-background-hover);
+  }
+
+  a, div {
+    
+    text-align: left;
+    flex-basis: 100%;
+
+    &:last-child {
+      min-width: auto;
+    }
+  }
+
+  .in, .out {
+    font-weight: bold;
+  }
+
+  .secondary {
+    font-size: 14px;
+    font-weight: normal;
+    color: var(--secondary-text-color);
+  }
+
+  .param {
+    width: 15px;
+    height: 15px;
+    background-color: gray;
+    display: inline-flex;
+    margin-left: 10px;
+    border-radius: 15px;
+  }
+
+  .param-manual {
+    background: url(https://crypted.life:3001/files/icons/manual.png);
+    background-size: cover;
+  }
+
+  .param-floating {
+    background: url(https://crypted.life:3001/files/icons/floating.png);
+    background-size: cover;
+  }
+
+  .param-juridical {}
+  .param-verifying {}
+  .param-cardverify {}
+  
+  .param-otherin {}
+  .param-otherout {}
+  .param-reg {}
+  .param-card2card {}
+
+}

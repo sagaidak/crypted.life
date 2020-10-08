@@ -1,0 +1,44 @@
+.obmenka-page {
+  display: flex;
+  justify-content: center;
+  padding: 0 40px;
+  background-color: var(--muted-link-color);
+}
+
+.obmenka-page-content {
+  margin: 15px auto;
+  max-width: 1280px;
+  width: 100%;
+  background-color: #ffffff;
+  min-height: 150vh;
+  border-radius: 15px;
+}
+
+.close-button {
+  position: fixed;
+  right: 60px;
+  top: 100px;
+  width: 42px;
+  height: 42px;
+  border: 1px solid gray;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: 0.2s;
+
+  &:hover {
+    background-color: gray;
+  }
+}
+
+@media (max-width: 650px) {
+  .close-button {
+    right: 20px;
+    top: 130px;
+  }
+  .obmenka-page {
+    padding: 0 5px;
+  }
+  .obmenka-page-content {
+    padding: 15px;
+  }
+}

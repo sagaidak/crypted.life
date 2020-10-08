@@ -1,0 +1,54 @@
+.portfolio-widget-item {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 10px;
+
+  .top-line {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+
+  .coins {
+    display: flex;
+    margin-bottom: 5px;
+  }
+
+  .date {
+    font-size: 14px;
+    color: var(--secondary-text-color);
+  }
+
+  .coin-item {
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+
+  .coin-icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+  }
+
+  .author {
+    color: var(--secondary-text-color);
+  }
+
+  .red {
+    color: var(--red-color);
+  }
+
+  .green {
+    color: var(--green-color);
+  }
+
+  .price-change {
+    text-align: right;
+    font-size: 14px;
+  }
+}
+

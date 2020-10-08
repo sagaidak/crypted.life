@@ -1,0 +1,38 @@
+.exchanges-widget {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+
+  .exchanges-widget-header {
+    font-weight: bold;
+  }
+
+  .exchanges-widget-head {
+    display: flex;
+
+  }
+
+  .exchanges-widget-item {
+    display: flex;
+    padding: 5px 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+    margin: 5px 0;
+    justify-content: space-between;
+
+    &:hover {
+      background-color: var(--link-background-hover);
+    }
+
+    div {
+      display: flex;
+    }
+
+    img {
+      margin-right: 10px;
+    }
+  }
+
+
+}
